@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Computation Server!</title>
+</head>
+<body>
+<h3>The Computation Server!</h3>
+  <form action="/add" method="post">
+      Expression:
+      <input type="text" name="expression" placeholder="1 + 1">
+      <br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+    <ul id="navigation">
+    {% for item in expressions %}
+        <li>{{ '%3.2f' % item.value }} = {{ item.text }}</li>
+    {% endfor %}
+    </ul>
+</body></html>
