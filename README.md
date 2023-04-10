@@ -11,3 +11,9 @@ Please make changes only in the following places:
 ./github/workflows/ci.yaml
 ./tests/
 ```
+
+
+Question: 
+
+2. 
+Using the provided databases in GitHub Actions can simplify setup, but bundling our own database can offer more control and customization options. 
